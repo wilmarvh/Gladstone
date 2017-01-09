@@ -1,0 +1,6 @@
+framework module Pods_Gladstone {
+  umbrella header "Pods-Gladstone-umbrella.h"
+
+  export *
+  module * { export * }
+}
