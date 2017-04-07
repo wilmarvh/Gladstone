@@ -38,10 +38,6 @@ class ViewController: UIViewController {
                 debugPrint(results as Any)
         }
     }
-    
-    func poop() {
-        _ = Alamofire.request("https://www.apple.com")
-    }
 
 }
 
