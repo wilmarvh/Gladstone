@@ -9,12 +9,12 @@ public class HealthQuery {
         debugPrint(results as Any)
     }
     
-    internal var typeIdentifier: Any?
-    internal var query: HKQuery?
-    internal var predicate: NSPredicate?
-    internal var sortDescriptors: [NSSortDescriptor]?
-    internal var sourceQuery: HKSourceQuery?
-    internal var limit: Int = HKObjectQueryNoLimit
+    var typeIdentifier: Any?
+    var query: HKQuery?
+    var predicate: NSPredicate?
+    var sortDescriptors: [NSSortDescriptor]?
+    var sourceQuery: HKSourceQuery?
+    var limit: Int = HKObjectQueryNoLimit
     
     @discardableResult
     public func sorted(withSortDescriptors sortDescriptors: [NSSortDescriptor]) -> HealthQuery {
@@ -70,7 +70,7 @@ public class HealthQuery {
 
 public enum HealthSampleTypes {
     
-    public static func fitness() -> Set<HKSampleType> {
+    public static var fitness: Set<HKSampleType> {
         return Set(
             [
                 HKSampleType.quantityType(forIdentifier: .activeEnergyBurned)!,

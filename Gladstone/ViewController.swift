@@ -10,7 +10,7 @@ class ViewController: UIViewController {
     }
     
     func auth() {
-        let types = HealthSampleTypes.fitness()
+        let types = HealthSampleTypes.fitness
         Gladstone.requestAuthorization(toShare: types, read: types, completion: { complete, error in
             self.query()
         })
