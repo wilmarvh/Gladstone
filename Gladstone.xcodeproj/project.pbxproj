@@ -15,7 +15,6 @@
 		1F71FEFD1DDE457900D1F66D /* Gladstone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71FEFC1DDE457900D1F66D /* Gladstone.swift */; };
 		1F71FF001DDE568800D1F66D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F71FEFF1DDE568800D1F66D /* HealthKit.framework */; };
 		1F9032071E1C47D900EAF48D /* GladstoneSampleQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9032061E1C47D900EAF48D /* GladstoneSampleQuery.swift */; };
-		420CF1EFDB77267DEDF3ECAD /* Pods_Gladstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 734B2324601498B31256CD5C /* Pods_Gladstone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +29,6 @@
 		1F71FEFE1DDE568800D1F66D /* Gladstone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gladstone.entitlements; sourceTree = "<group>"; };
 		1F71FEFF1DDE568800D1F66D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		1F9032061E1C47D900EAF48D /* GladstoneSampleQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GladstoneSampleQuery.swift; sourceTree = "<group>"; };
-		204E47BDD0598AED38EB50B4 /* Pods-Gladstone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gladstone.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gladstone/Pods-Gladstone.release.xcconfig"; sourceTree = "<group>"; };
-		734B2324601498B31256CD5C /* Pods_Gladstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gladstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC766796D4AAAC991076488D /* Pods-Gladstone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gladstone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gladstone/Pods-Gladstone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				420CF1EFDB77267DEDF3ECAD /* Pods_Gladstone.framework in Frameworks */,
 				1F71FF001DDE568800D1F66D /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +48,6 @@
 			children = (
 				1F71FEE91DDE456700D1F66D /* Gladstone */,
 				1F71FEE81DDE456700D1F66D /* Products */,
-				BCB0E8896FB29C10B11C1A1D /* Pods */,
 				9A982B745184A3C9E555BBBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -86,18 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				1F71FEFF1DDE568800D1F66D /* HealthKit.framework */,
-				734B2324601498B31256CD5C /* Pods_Gladstone.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BCB0E8896FB29C10B11C1A1D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CC766796D4AAAC991076488D /* Pods-Gladstone.debug.xcconfig */,
-				204E47BDD0598AED38EB50B4 /* Pods-Gladstone.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,12 +91,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F71FEF91DDE456700D1F66D /* Build configuration list for PBXNativeTarget "Gladstone" */;
 			buildPhases = (
-				0782F331C828B4011F184263 /* [CP] Check Pods Manifest.lock */,
 				1F71FEE31DDE456700D1F66D /* Sources */,
 				1F71FEE41DDE456700D1F66D /* Frameworks */,
 				1F71FEE51DDE456700D1F66D /* Resources */,
-				A8ECE07DEAFF758821CC7EFE /* [CP] Embed Pods Frameworks */,
-				13A306B3B5E0E99CD09439E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,54 +156,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0782F331C828B4011F184263 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		13A306B3B5E0E99CD09439E8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gladstone/Pods-Gladstone-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A8ECE07DEAFF758821CC7EFE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gladstone/Pods-Gladstone-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F71FEE31DDE456700D1F66D /* Sources */ = {
@@ -353,7 +286,6 @@
 		};
 		1F71FEFA1DDE456700D1F66D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC766796D4AAAC991076488D /* Pods-Gladstone.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -369,7 +301,6 @@
 		};
 		1F71FEFB1DDE456700D1F66D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 204E47BDD0598AED38EB50B4 /* Pods-Gladstone.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

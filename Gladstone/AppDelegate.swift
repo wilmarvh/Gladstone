@@ -1,13 +1,4 @@
-//
-//  AppDelegate.swift
-//  Gladstone
-//
-//  Created by Wilmar van Heerden on 2016/11/17.
-//  Copyright © 2016 ideaHarmony. All rights reserved.
-//
-
 import UIKit
-import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
