@@ -7,28 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F71FEEB1DDE456700D1F66D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71FEEA1DDE456700D1F66D /* AppDelegate.swift */; };
-		1F71FEED1DDE456700D1F66D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71FEEC1DDE456700D1F66D /* ViewController.swift */; };
-		1F71FEF01DDE456700D1F66D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F71FEEE1DDE456700D1F66D /* Main.storyboard */; };
-		1F71FEF21DDE456700D1F66D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F71FEF11DDE456700D1F66D /* Assets.xcassets */; };
-		1F71FEF51DDE456700D1F66D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F71FEF31DDE456700D1F66D /* LaunchScreen.storyboard */; };
-		1F71FEFD1DDE457900D1F66D /* Gladstone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F71FEFC1DDE457900D1F66D /* Gladstone.swift */; };
 		1F71FF001DDE568800D1F66D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F71FEFF1DDE568800D1F66D /* HealthKit.framework */; };
-		1F9032071E1C47D900EAF48D /* GladstoneSampleQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9032061E1C47D900EAF48D /* GladstoneSampleQuery.swift */; };
+		1FAD983B2289F6740014E6D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD98302289F6730014E6D9 /* ViewController.swift */; };
+		1FAD983C2289F6740014E6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAD98322289F6730014E6D9 /* Assets.xcassets */; };
+		1FAD983D2289F6740014E6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAD98332289F6730014E6D9 /* LaunchScreen.storyboard */; };
+		1FAD983E2289F6740014E6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAD98352289F6730014E6D9 /* Main.storyboard */; };
+		1FAD98402289F6740014E6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD98382289F6730014E6D9 /* AppDelegate.swift */; };
+		1FAD98512289F6FA0014E6D9 /* Gladstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAD98482289F6FA0014E6D9 /* Gladstone.framework */; };
+		1FAD98582289F6FA0014E6D9 /* GladstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD98572289F6FA0014E6D9 /* GladstoneTests.swift */; };
+		1FAD985A2289F6FA0014E6D9 /* Gladstone.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAD984A2289F6FA0014E6D9 /* Gladstone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FAD985D2289F6FA0014E6D9 /* Gladstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAD98482289F6FA0014E6D9 /* Gladstone.framework */; };
+		1FAD985E2289F6FA0014E6D9 /* Gladstone.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1FAD98482289F6FA0014E6D9 /* Gladstone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1FAD98672289F7110014E6D9 /* Gladstone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD98662289F7110014E6D9 /* Gladstone.swift */; };
+		1FAD98692289F7260014E6D9 /* HealthStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD98682289F7260014E6D9 /* HealthStoreManager.swift */; };
+		1FAD986B2289F7740014E6D9 /* HealthQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAD986A2289F7740014E6D9 /* HealthQuery.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1FAD98522289F6FA0014E6D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F71FEDF1DDE456700D1F66D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FAD98472289F6FA0014E6D9;
+			remoteInfo = Gladstone;
+		};
+		1FAD98542289F6FA0014E6D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F71FEDF1DDE456700D1F66D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F71FEE61DDE456700D1F66D;
+			remoteInfo = App;
+		};
+		1FAD985B2289F6FA0014E6D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F71FEDF1DDE456700D1F66D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FAD98472289F6FA0014E6D9;
+			remoteInfo = Gladstone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FAD98622289F6FA0014E6D9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1FAD985E2289F6FA0014E6D9 /* Gladstone.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1F71FEE71DDE456700D1F66D /* Gladstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gladstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F71FEEA1DDE456700D1F66D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F71FEEC1DDE456700D1F66D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1F71FEEF1DDE456700D1F66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F71FEF11DDE456700D1F66D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F71FEF41DDE456700D1F66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1F71FEF61DDE456700D1F66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F71FEFC1DDE457900D1F66D /* Gladstone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gladstone.swift; sourceTree = "<group>"; };
-		1F71FEFE1DDE568800D1F66D /* Gladstone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gladstone.entitlements; sourceTree = "<group>"; };
+		1F71FEE71DDE456700D1F66D /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F71FEFF1DDE568800D1F66D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		1F9032061E1C47D900EAF48D /* GladstoneSampleQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GladstoneSampleQuery.swift; sourceTree = "<group>"; };
+		1FAD98302289F6730014E6D9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FAD98312289F6730014E6D9 /* Gladstone.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Gladstone.entitlements; sourceTree = "<group>"; };
+		1FAD98322289F6730014E6D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FAD98342289F6730014E6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FAD98362289F6730014E6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FAD98382289F6730014E6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FAD98392289F6730014E6D9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FAD98482289F6FA0014E6D9 /* Gladstone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gladstone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAD984A2289F6FA0014E6D9 /* Gladstone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Gladstone.h; sourceTree = "<group>"; };
+		1FAD984B2289F6FA0014E6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FAD98502289F6FA0014E6D9 /* GladstoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GladstoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAD98572289F6FA0014E6D9 /* GladstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GladstoneTests.swift; sourceTree = "<group>"; };
+		1FAD98592289F6FA0014E6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FAD98662289F7110014E6D9 /* Gladstone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gladstone.swift; sourceTree = "<group>"; };
+		1FAD98682289F7260014E6D9 /* HealthStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStoreManager.swift; sourceTree = "<group>"; };
+		1FAD986A2289F7740014E6D9 /* HealthQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +87,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FAD985D2289F6FA0014E6D9 /* Gladstone.framework in Frameworks */,
 				1F71FF001DDE568800D1F66D /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAD98452289F6FA0014E6D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAD984D2289F6FA0014E6D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAD98512289F6FA0014E6D9 /* Gladstone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +113,9 @@
 		1F71FEDE1DDE456700D1F66D = {
 			isa = PBXGroup;
 			children = (
-				1F71FEE91DDE456700D1F66D /* Gladstone */,
+				1FAD982F2289F6730014E6D9 /* App */,
+				1FAD98492289F6FA0014E6D9 /* Gladstone */,
+				1FAD98562289F6FA0014E6D9 /* GladstoneTests */,
 				1F71FEE81DDE456700D1F66D /* Products */,
 				9A982B745184A3C9E555BBBB /* Frameworks */,
 			);
@@ -55,25 +124,46 @@
 		1F71FEE81DDE456700D1F66D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F71FEE71DDE456700D1F66D /* Gladstone.app */,
+				1F71FEE71DDE456700D1F66D /* App.app */,
+				1FAD98482289F6FA0014E6D9 /* Gladstone.framework */,
+				1FAD98502289F6FA0014E6D9 /* GladstoneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F71FEE91DDE456700D1F66D /* Gladstone */ = {
+		1FAD982F2289F6730014E6D9 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				1F71FEFE1DDE568800D1F66D /* Gladstone.entitlements */,
-				1F71FEEA1DDE456700D1F66D /* AppDelegate.swift */,
-				1F71FEEC1DDE456700D1F66D /* ViewController.swift */,
-				1F71FEEE1DDE456700D1F66D /* Main.storyboard */,
-				1F71FEF11DDE456700D1F66D /* Assets.xcassets */,
-				1F71FEF31DDE456700D1F66D /* LaunchScreen.storyboard */,
-				1F71FEF61DDE456700D1F66D /* Info.plist */,
-				1F71FEFC1DDE457900D1F66D /* Gladstone.swift */,
-				1F9032061E1C47D900EAF48D /* GladstoneSampleQuery.swift */,
+				1FAD98312289F6730014E6D9 /* Gladstone.entitlements */,
+				1FAD98322289F6730014E6D9 /* Assets.xcassets */,
+				1FAD98332289F6730014E6D9 /* LaunchScreen.storyboard */,
+				1FAD98352289F6730014E6D9 /* Main.storyboard */,
+				1FAD98382289F6730014E6D9 /* AppDelegate.swift */,
+				1FAD98302289F6730014E6D9 /* ViewController.swift */,
+				1FAD98392289F6730014E6D9 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1FAD98492289F6FA0014E6D9 /* Gladstone */ = {
+			isa = PBXGroup;
+			children = (
+				1FAD984B2289F6FA0014E6D9 /* Info.plist */,
+				1FAD984A2289F6FA0014E6D9 /* Gladstone.h */,
+				1FAD98662289F7110014E6D9 /* Gladstone.swift */,
+				1FAD98682289F7260014E6D9 /* HealthStoreManager.swift */,
+				1FAD986A2289F7740014E6D9 /* HealthQuery.swift */,
 			);
 			path = Gladstone;
+			sourceTree = "<group>";
+		};
+		1FAD98562289F6FA0014E6D9 /* GladstoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FAD98572289F6FA0014E6D9 /* GladstoneTests.swift */,
+				1FAD98592289F6FA0014E6D9 /* Info.plist */,
+			);
+			path = GladstoneTests;
 			sourceTree = "<group>";
 		};
 		9A982B745184A3C9E555BBBB /* Frameworks */ = {
@@ -86,14 +176,45 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1FAD98432289F6FA0014E6D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAD985A2289F6FA0014E6D9 /* Gladstone.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		1F71FEE61DDE456700D1F66D /* Gladstone */ = {
+		1F71FEE61DDE456700D1F66D /* App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F71FEF91DDE456700D1F66D /* Build configuration list for PBXNativeTarget "Gladstone" */;
+			buildConfigurationList = 1F71FEF91DDE456700D1F66D /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				1F71FEE31DDE456700D1F66D /* Sources */,
 				1F71FEE41DDE456700D1F66D /* Frameworks */,
 				1F71FEE51DDE456700D1F66D /* Resources */,
+				1FAD98622289F6FA0014E6D9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FAD985C2289F6FA0014E6D9 /* PBXTargetDependency */,
+			);
+			name = App;
+			productName = Gladstone;
+			productReference = 1F71FEE71DDE456700D1F66D /* App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FAD98472289F6FA0014E6D9 /* Gladstone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAD985F2289F6FA0014E6D9 /* Build configuration list for PBXNativeTarget "Gladstone" */;
+			buildPhases = (
+				1FAD98432289F6FA0014E6D9 /* Headers */,
+				1FAD98442289F6FA0014E6D9 /* Sources */,
+				1FAD98452289F6FA0014E6D9 /* Frameworks */,
+				1FAD98462289F6FA0014E6D9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -101,8 +222,27 @@
 			);
 			name = Gladstone;
 			productName = Gladstone;
-			productReference = 1F71FEE71DDE456700D1F66D /* Gladstone.app */;
-			productType = "com.apple.product-type.application";
+			productReference = 1FAD98482289F6FA0014E6D9 /* Gladstone.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1FAD984F2289F6FA0014E6D9 /* GladstoneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAD98632289F6FA0014E6D9 /* Build configuration list for PBXNativeTarget "GladstoneTests" */;
+			buildPhases = (
+				1FAD984C2289F6FA0014E6D9 /* Sources */,
+				1FAD984D2289F6FA0014E6D9 /* Frameworks */,
+				1FAD984E2289F6FA0014E6D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FAD98532289F6FA0014E6D9 /* PBXTargetDependency */,
+				1FAD98552289F6FA0014E6D9 /* PBXTargetDependency */,
+			);
+			name = GladstoneTests;
+			productName = GladstoneTests;
+			productReference = 1FAD98502289F6FA0014E6D9 /* GladstoneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -110,14 +250,15 @@
 		1F71FEDF1DDE456700D1F66D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0920;
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = ideaHarmony;
 				TargetAttributes = {
 					1F71FEE61DDE456700D1F66D = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = F489U365LQ;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
@@ -125,11 +266,23 @@
 							};
 						};
 					};
+					1FAD98472289F6FA0014E6D9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = F489U365LQ;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+					1FAD984F2289F6FA0014E6D9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = F489U365LQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F71FEE61DDE456700D1F66D;
+					};
 				};
 			};
 			buildConfigurationList = 1F71FEE21DDE456700D1F66D /* Build configuration list for PBXProject "Gladstone" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -140,7 +293,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F71FEE61DDE456700D1F66D /* Gladstone */,
+				1F71FEE61DDE456700D1F66D /* App */,
+				1FAD98472289F6FA0014E6D9 /* Gladstone */,
+				1FAD984F2289F6FA0014E6D9 /* GladstoneTests */,
 			);
 		};
 /* End PBXProject section */
@@ -150,9 +305,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F71FEF51DDE456700D1F66D /* LaunchScreen.storyboard in Resources */,
-				1F71FEF21DDE456700D1F66D /* Assets.xcassets in Resources */,
-				1F71FEF01DDE456700D1F66D /* Main.storyboard in Resources */,
+				1FAD983C2289F6740014E6D9 /* Assets.xcassets in Resources */,
+				1FAD983E2289F6740014E6D9 /* Main.storyboard in Resources */,
+				1FAD983D2289F6740014E6D9 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAD98462289F6FA0014E6D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAD984E2289F6FA0014E6D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,30 +332,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F71FEED1DDE456700D1F66D /* ViewController.swift in Sources */,
-				1F71FEEB1DDE456700D1F66D /* AppDelegate.swift in Sources */,
-				1F9032071E1C47D900EAF48D /* GladstoneSampleQuery.swift in Sources */,
-				1F71FEFD1DDE457900D1F66D /* Gladstone.swift in Sources */,
+				1FAD983B2289F6740014E6D9 /* ViewController.swift in Sources */,
+				1FAD98402289F6740014E6D9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAD98442289F6FA0014E6D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAD98672289F7110014E6D9 /* Gladstone.swift in Sources */,
+				1FAD986B2289F7740014E6D9 /* HealthQuery.swift in Sources */,
+				1FAD98692289F7260014E6D9 /* HealthStoreManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAD984C2289F6FA0014E6D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAD98582289F6FA0014E6D9 /* GladstoneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		1F71FEEE1DDE456700D1F66D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F71FEEF1DDE456700D1F66D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		1FAD98532289F6FA0014E6D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FAD98472289F6FA0014E6D9 /* Gladstone */;
+			targetProxy = 1FAD98522289F6FA0014E6D9 /* PBXContainerItemProxy */;
 		};
-		1F71FEF31DDE456700D1F66D /* LaunchScreen.storyboard */ = {
+		1FAD98552289F6FA0014E6D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F71FEE61DDE456700D1F66D /* App */;
+			targetProxy = 1FAD98542289F6FA0014E6D9 /* PBXContainerItemProxy */;
+		};
+		1FAD985C2289F6FA0014E6D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FAD98472289F6FA0014E6D9 /* Gladstone */;
+			targetProxy = 1FAD985B2289F6FA0014E6D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FAD98332289F6730014E6D9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1F71FEF41DDE456700D1F66D /* Base */,
+				1FAD98342289F6730014E6D9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1FAD98352289F6730014E6D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FAD98362289F6730014E6D9 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -196,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -205,6 +409,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -212,6 +417,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -239,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -252,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -261,6 +468,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -268,6 +476,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -289,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -302,13 +511,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Gladstone/Gladstone.entitlements;
+				CODE_SIGN_ENTITLEMENTS = App/Gladstone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = F489U365LQ;
-				INFOPLIST_FILE = Gladstone/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.wilmar.gladstone.Gladstone;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilmar.GladstoneApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -317,13 +527,127 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Gladstone/Gladstone.entitlements;
+				CODE_SIGN_ENTITLEMENTS = App/Gladstone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = F489U365LQ;
-				INFOPLIST_FILE = Gladstone/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.wilmar.gladstone.Gladstone;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilmar.GladstoneApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1FAD98602289F6FA0014E6D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F489U365LQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Gladstone/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilmar.Gladstone.Gladstone;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1FAD98612289F6FA0014E6D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F489U365LQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = Gladstone/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilmar.Gladstone.Gladstone;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1FAD98642289F6FA0014E6D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F489U365LQ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = GladstoneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilmar.Gladstone.GladstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
+			};
+			name = Debug;
+		};
+		1FAD98652289F6FA0014E6D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F489U365LQ;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = GladstoneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = me.wilmar.Gladstone.GladstoneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Release;
 		};
@@ -339,11 +663,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F71FEF91DDE456700D1F66D /* Build configuration list for PBXNativeTarget "Gladstone" */ = {
+		1F71FEF91DDE456700D1F66D /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F71FEFA1DDE456700D1F66D /* Debug */,
 				1F71FEFB1DDE456700D1F66D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FAD985F2289F6FA0014E6D9 /* Build configuration list for PBXNativeTarget "Gladstone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAD98602289F6FA0014E6D9 /* Debug */,
+				1FAD98612289F6FA0014E6D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FAD98632289F6FA0014E6D9 /* Build configuration list for PBXNativeTarget "GladstoneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAD98642289F6FA0014E6D9 /* Debug */,
+				1FAD98652289F6FA0014E6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

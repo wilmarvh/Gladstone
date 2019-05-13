@@ -1,72 +1,26 @@
 import Foundation
 import HealthKit
 
-public class HealthQuery {
+public struct Gladstone {
     
-    public typealias HealthQueryCompletion = (_: [Any]?) -> Void
-    
-    var completion: HealthQueryCompletion = { results in
-        debugPrint(results as Any)
-    }
-    
-    var typeIdentifier: Any?
-    var query: HKQuery?
-    var predicate: NSPredicate?
-    var sortDescriptors: [NSSortDescriptor]?
-    var sourceQuery: HKSourceQuery?
-    var limit: Int = HKObjectQueryNoLimit
-    
-    @discardableResult
-    public func sorted(withSortDescriptors sortDescriptors: [NSSortDescriptor]) -> HealthQuery {
-        self.sortDescriptors = sortDescriptors
-        return self
+    public static func requestAuthorization(toShare: Set<HKSampleType>?, read: Set<HKObjectType>, completion: @escaping (Bool, Error?) -> Void) {
+        HealthStoreManager.default.store.requestAuthorization(toShare: toShare, read: read, completion: completion)
     }
     
     @discardableResult
-    public func limited(numberOfSamples limit: Int) -> HealthQuery {
-        self.limit = limit
-        return self
+    public static func latest(_ identifier: HKQuantityTypeIdentifier) -> HealthQuery {
+        return HealthStoreManager.default.initiateQuery(with: identifier)
+            .sorted(with: [NSSortDescriptor(key: HKSampleSortIdentifierStartDate, ascending: false)])
+            .limited(to: 1)
     }
     
     @discardableResult
-    public func excludeSource(withBundleIdentifier bundleIdentifier: String) -> HealthQuery {
-        debugPrint("Not implemented yet")
-        return self
-    }
-    
-    @discardableResult
-    public func excludeSources(_ source: [HKSource]) -> HealthQuery {
-        debugPrint("Not implemented yet")
-        return self
-    }
-    
-    @discardableResult
-    public func limitedToSource(withBundleIdentifier identifier: String) -> HealthQuery {
-        debugPrint("Not implemented yet")
-        return self
-    }
-    
-    @discardableResult
-    public func limitedToSources(_ sources: [HKSource]) -> HealthQuery {
-        debugPrint("Not implemented yet")
-        return self
-    }
-    
-    @discardableResult
-    public func results() -> HealthQuery {
-        debugPrint("Empty implementation")
-        return self
-    }
-    
-    func sampleType() -> HKSampleType? {
-        if let identifier = self.typeIdentifier as? HKQuantityTypeIdentifier {
-            return HKSampleType.quantityType(forIdentifier: identifier)
-        }
-        
-        return nil
+    public static func query(for identifier: HKQuantityTypeIdentifier) -> HealthQuery {
+        return HealthStoreManager.default.initiateQuery(with: identifier)
     }
     
 }
+
 
 public enum HealthSampleTypes {
     
@@ -77,18 +31,4 @@ public enum HealthSampleTypes {
                 HKWorkoutType.workoutType()
             ])
     }
-}
-
-public class HealthStoreManager {
-    
-    public let store: HKHealthStore = HKHealthStore()
-    
-    open static let `default` = {
-        return HealthStoreManager()
-    }()
-    
-}
-
-public func requestAuthorization(toShare: Set<HKSampleType>?, read: Set<HKObjectType>, completion: @escaping (Bool, Error?) -> Void) {
-    HealthStoreManager.default.store.requestAuthorization(toShare: toShare, read: read, completion: completion)
 }

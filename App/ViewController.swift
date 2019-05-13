@@ -1,8 +1,9 @@
 import UIKit
 import HealthKit
+import Gladstone
 
 class ViewController: UIViewController {
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -11,7 +12,7 @@ class ViewController: UIViewController {
     
     func auth() {
         let types = HealthSampleTypes.fitness
-        Gladstone.requestAuthorization(toShare: types, read: types, completion: { complete, error in
+        Gladstone.requestAuthorization(toShare: nil, read: types, completion: { complete, error in
             self.query()
         })
     }
@@ -22,13 +23,13 @@ class ViewController: UIViewController {
         })
         
         Gladstone.query(for: .heartRate)
-            .sorted(withSortDescriptors: [NSSortDescriptor.init(key: HKSampleSortIdentifierStartDate, ascending: false)])
-            .limited(numberOfSamples: 10)
-            .excludeSource(withBundleIdentifier: "com.apple")
+            .sorted(with: [NSSortDescriptor.init(key: HKSampleSortIdentifierStartDate, ascending: false)])
+            .limited(to: 10)
+            .excludeSource(with: "com.apple")
             .results { results in
                 debugPrint(results as Any)
         }
     }
-
+    
 }
 
